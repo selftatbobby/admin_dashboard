@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 3px solid red;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    border: 3px solid blue;
+    display: grid;
+    align-items: flex-start;
+}
+
+
+.main {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 3px solid green;
+}
